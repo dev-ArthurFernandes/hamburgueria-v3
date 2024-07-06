@@ -1,5 +1,5 @@
 import app from "./app";
-import { AppDataSource } from "./DataSource";
+import { AppDataSource } from "./data-source";
 
 AppDataSource.initialize()
   .then(() => {

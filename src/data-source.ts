@@ -8,8 +8,6 @@ function dataSourceConfig(): DataSourceOptions {
 
   const migrationsPath: string = path.join(__dirname, './migrations/**.{ts,js}')
 
-  const subscribersPath: string = path.join(__dirname, './subscribers/**.{ts,js}')
-
   return {
     "type": "mariadb",
     "host": "localhost",
@@ -21,7 +19,7 @@ function dataSourceConfig(): DataSourceOptions {
     "logging": false,
     "entities": [entitiesPath],
     "migrations": [migrationsPath],
-    "subscribers": [subscribersPath]
+    "subscribers": []
   }
   
 }
